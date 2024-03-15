@@ -1,0 +1,10 @@
+import:
+  - orgs/acme/_defaults.yaml
+
+# These are the default values for the `core` ou. Here we are setting the `ou` value to `core` in the `context`
+# provider.
+terraform:
+  providers:
+    context:
+      values:
+        ou: core

@@ -1,0 +1,6 @@
+
+provider "aws" {
+}
+
+provider "context" {
+}

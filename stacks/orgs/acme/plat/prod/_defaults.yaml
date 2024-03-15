@@ -1,0 +1,11 @@
+import:
+  - mixins/account/prod
+  - orgs/acme/plat/_defaults
+
+# This is imported into every region of the `prod` account. Here we are defining the 'support_email' value for the
+# `context` provider.
+terraform:
+  providers:
+    context:
+      values:
+        support_email: prodsupport@acme.com

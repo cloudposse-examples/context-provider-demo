@@ -1,0 +1,9 @@
+# This mixin is imported into the `us-east-1` region of every account. Here we are defining the 'region' value for the
+# `context` provider as well as the region property for `aws` provider.
+terraform:
+  providers:
+    context:
+      values:
+        region: ue1
+    aws:
+      region: us-east-1
