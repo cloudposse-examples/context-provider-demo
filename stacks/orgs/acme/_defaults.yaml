@@ -1,0 +1,38 @@
+terraform:
+  backend_type: local
+  providers:
+    context:
+      enabled: true
+      delimitier: "-"
+      property_order:
+        - namespace
+        - ou
+        - account
+        - region
+        - name
+      properties:
+        namespace:
+          required: true
+        ou:
+          required: true
+          validation_regex: "^(core|plat)$"
+        account:
+          required: true
+        region:
+          required: true
+          max_length: 3
+        component: {}
+        repo: {}
+        stack: {}
+        stack_file: {}
+        name: {}
+        support_email:
+          required: true
+          validation_regex: "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+      tags_key_case: title
+      values:
+        namespace: acme
+        component: "{{.atmos_component}}"
+        repo: context-provider-demo
+        stack: "{{.atmos_stack}}"
+        stack_file: "{{.atmos_stack_file}}"

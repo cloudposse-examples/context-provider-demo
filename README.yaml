@@ -1,0 +1,73 @@
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: context-provider-demo
+
+# Logo for this project
+#logo: docs/logo.png
+
+# License of this project
+license: "APACHE2"
+
+# Copyrights
+copyrights:
+  - name: "Cloud Posse, LLC"
+    url: "https://cloudposse.com"
+    year: "2024"
+
+# Canonical GitHub repo
+github_repo: cloudposse-examples/context-provider-demo
+
+# Badges to display
+badges:
+  - name: "Latest Release"
+    image: "https://img.shields.io/github/release/cloudposse-examples/context-provider-demo.svg"
+    url: "https://github.com/cloudposse-examples/context-provider-demo/releases/latest"
+  - name: "Slack Community"
+    image: "https://slack.cloudposse.com/badge.svg"
+    url: "https://slack.cloudposse.com"
+  - name: "Discourse Forum"
+    image: "https://img.shields.io/discourse/https/ask.sweetops.com/posts.svg"
+    url: "https://ask.sweetops.com/"
+
+# List any related terraform modules that this module may be used with or that this module depends on.
+related:
+  - name: "terraform-provider-context"
+    description: |-
+      The Terraform `contest` provider is a custom provider that allows you to pass context between modules in a
+      Terraform configuration.
+    url: "https://github.com/cloudposse/terraform-provider-context"
+
+# List any resources helpful for someone to get started. For example, link to the hashicorp documentation or AWS documentation.
+references:
+
+# Short description of this project
+description: |-
+  This repository is a demonstration of how to use the `context` provider to pass context between modules in a
+  [atmos](https://atmos.tools) environment.
+
+# Introduction to the project
+introduction: |-
+  This is an introduction.
+
+# How to use this module. Should be an easy example to copy and paste.
+#usage: |-
+#  For a complete example, see [examples/complete](examples/complete).
+
+# Example usage
+#examples: |-
+#  Here is an example of using this module:
+#  - [`examples/complete`](https://github.com/cloudposse-examples/context-provider-demo/) - complete example of using this module
+
+# How to get started quickly
+#quickstart: |-
+#  Here's how to get started...
+
+# Other files to include in this README from the project folder
+include: []
+
+# Contributors to this project
+contributors: []

@@ -1,0 +1,11 @@
+import:
+  - mixins/account/network
+  - orgs/acme/core/_defaults
+
+# This is imported into every region of the `network` account. Here we are defining the 'support_email' value for the
+# `context` provider.
+terraform:
+  providers:
+    context:
+      values:
+        support_email: network-team@acme.com

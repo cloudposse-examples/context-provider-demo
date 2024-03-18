@@ -1,0 +1,7 @@
+# This mixin is imported into every region of the `prod` account.
+# Here we are defining the 'account' value for the `context` provider.
+terraform:
+  providers:
+    context:
+      values:
+        account: prod
