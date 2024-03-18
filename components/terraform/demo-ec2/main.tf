@@ -40,7 +40,7 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-# Deply an EC@ instance and set the tags based on the context
+# Deply an EC2 instance and set the tags based on the context
 resource "aws_instance" "demo" {
   count         = local.enabled ? 1 : 0
   ami           = data.aws_ami.ubuntu[0].id

@@ -15,7 +15,7 @@ terraform:
           required: true
         ou:
           required: true
-          validation_regex: "^core|plat$"
+          validation_regex: "^(core|plat)$"
         account:
           required: true
         region:
